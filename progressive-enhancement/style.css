@@ -1,0 +1,153 @@
+
+/* general */
+body {
+  max-width: 90%;
+  margin: auto;
+  background: linear-gradient(90deg, rgb(166, 213, 255), rgb(207, 177, 255));
+  color: #001F38;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  line-height: 200%;
+  text-align: justify;
+  background-image: url(https://cdn.clipart.email/4e736e7c1498f37a4ceee5d38f32735f_cloudy-sky-background-png-transparent-cloudy-sky-backgroundpng-_2176-1493.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: cover;
+  }
+  h1 {
+    background-color: #FFEA6C;
+  }
+  img {
+    height: 350px;
+    width: auto;
+  }
+
+
+/* links */
+  a:link {
+    color: #EE8116;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:visited {
+    color: #7478C4;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #610BE3;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  a:active {
+    color: #B200DB;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+
+/* quotes*/
+  q.histoire {
+    font-style: italic;
+  }
+  blockquote {
+    font-size: 160%;
+    font-style: italic;
+    background-color: #D4D9D5;
+    border-left: 3px solid #B8402C; 
+    padding: 30px;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: 80px;
+  }
+
+
+/* bien & mal */
+  strong.bien {
+    text-transform: uppercase;
+    color: green;
+  }
+  strong.mal {
+    text-transform: uppercase;
+    color: red;
+  }
+  em.bien {
+    text-transform: uppercase;
+    color: green;
+  }
+  em.mal {
+    text-transform: uppercase;
+    color: red;
+  }
+
+
+/* images list */
+  #up {
+    background: url(https://raw.githubusercontent.com/becodeorg/LIE-Jepsen-3.20/master/01-the-field/03-html-css/1-initiation/progressive-enhancement/bien.png?token=APOXPW23MXU73X5ZXJPYVF26ZOJRC);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-bottom: 25px;
+  }
+  #down {
+    background: url(https://raw.githubusercontent.com/becodeorg/LIE-Jepsen-3.20/master/01-the-field/03-html-css/1-initiation/progressive-enhancement/mal.png?token=APOXPW7EC2OI6C6H4A2TQB26ZOJVC);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-bottom: 25px;
+  }
+  #cat {
+    background: url(https://raw.githubusercontent.com/becodeorg/LIE-Jepsen-3.20/master/01-the-field/03-html-css/1-initiation/progressive-enhancement/chat.png?token=APOXPW64SBNCCWRD7AFSQT26ZOJW6);
+    background-repeat: no-repeat;
+    padding-left: 55px;
+    padding-bottom: 25px;
+  }
+
+
+/* tableau */
+  table {
+    border-collapse: collapse;
+}
+  table, th, td {
+    border: 1px solid #ADA6A9;
+}
+  th, td {
+    padding: 15px;
+    text-align: left;
+}
+  #evenement tr:nth-child(even){
+    background-color: #ddd;
+  }
+  #evenement tr:nth-child(odd){
+    background-color: white;
+  }
+  #evenement tr:hover {
+    background-color: #AAB0B5;
+  }
+
+
+/* images - text */
+  #left {
+    float: left;
+    position: static;
+    margin-right: 50px;
+    border-right: 3px hidden; 
+    padding: 30px;
+  }
+  #right {
+    float: right;
+    position: static;
+    margin-left: 50px;
+    border-left: 3px hidden; 
+    padding: 30px;
+  }
+  #intro {
+    margin-right: 300px;
+    position: static;
+  }
+  #mars {
+    margin-left: 300px;
+    position: static;
+  }
+  #chinois {
+    margin-right: 300px;
+    position: static;
+  }

@@ -1,0 +1,115 @@
+
+/* STYLE DES POLICES*/
+@import "_valeurs";
+
+h4 {
+  color: $black;
+  padding-bottom: 15px;
+  font-size: 0.9em;
+}
+
+p {
+  margin-top: 0px;
+  font-size: 0.8em;
+}
+
+/* DIMENSIONS DES IMAGES*/
+
+@mixin dim_footer_link {
+  width: 20px;
+  height: 20px;
+} 
+
+@mixin dim_vignettes {
+  width: 20px;
+  height: 20px;
+} 
+  
+@mixin dim_paiement {
+  width: 1vw;
+  height: auto;
+}
+
+
+/* STYLE DU FOOTER*/
+
+footer {
+  height: auto;
+  max-width: 100vw;
+  position: absolute;
+  top: 900vh;
+  display: grid;
+  padding-left: 8%;
+  padding-right: 8%;
+  grid-template-columns: 22vw 22vw 22vw;
+  grid-template-rows: 30vh 10vh;
+  gap: 80px 5vw;
+  align-items: start;
+  color: $grey;
+  line-height: 3vh;
+
+  .hidden {
+    display: none;
+  }
+
+  .footer_help {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .footer_about_supro {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .footer_online_shop {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .footer_copyright {
+    font-size: 15px;
+    grid-column: 1;
+    grid-row: 2;
+
+    .footer_copyright_supro {
+      color: $black
+    }
+
+    img {
+      @include dim_vignettes;
+    }
+  }
+
+  .footer_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row: 2;
+
+    img {
+      @include dim_footer_link;
+      margin-right: 10px;
+    }
+  }
+
+  .footer_paiement {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-content: flex-end;
+    grid-column: 4;
+    grid-row: 2;
+    
+    img {
+      @include dim_paiement;
+    }
+      
+  }
+}
+
+
+

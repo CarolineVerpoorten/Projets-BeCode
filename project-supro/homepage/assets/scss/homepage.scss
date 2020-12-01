@@ -1,0 +1,28 @@
+@import "_font";
+body {
+    font-family: "Roboto";
+}
+
+/**desktop**/
+@media only screen and (min-width: 769px) {
+
+    @import "_desktop";
+
+}
+
+/**tablet**/
+@media only screen and (max-width: 768px) and (min-width: 501px) {
+
+    @import "_tablet";
+
+}
+
+
+/**mobile**/
+@media only screen and (max-width: 500px) {
+
+    @import "_mobile";
+
+}
+
+

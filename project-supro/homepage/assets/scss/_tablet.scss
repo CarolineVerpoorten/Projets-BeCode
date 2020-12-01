@@ -1,0 +1,924 @@
+
+
+@import "_valeurs";
+@import "_hamburger-menu";
+@import "_mixins-tablet";
+@import "_footer-tablet";
+
+
+body{
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+
+header {
+    height: auto;
+    background-image: none;
+    position: relative;
+    overflow-x: hidden;
+    max-width: 100vw;
+
+    .navigateur {
+        display:none
+    }
+
+    .background {
+        background-image: url(../resources/abc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .socialmedia {
+        position: absolute;
+        top: 87vh;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .fab {
+            width: 6vh;
+            height: 3vh;
+        }
+
+        a:link {
+            color: $grey;
+        }
+        
+        a:visited {
+            color: $grey;
+        }
+            
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .womanshoes {
+        position: absolute;
+        top: 25vh;
+        right: 0;
+        bottom: 0;
+        left: 15%;
+        width: 20vw;
+
+        .preview {
+            color: $orange;
+            font-size: 1em;
+        }
+
+        .woman {
+            font-size: 5em;
+            font-weight: bold;
+            color: $black;
+            margin: 1vh 0 5vh 0;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .dots {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+.bannerh1 {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+
+    .imagebanner {
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-direction: column;
+
+        .banner {
+            width: 100vw;
+            height: 33vh;
+            object-fit: cover;  
+        }
+    }
+
+    .headband {
+        position: absolute;
+        top: 7%;
+        left: 5%;
+        width: 15vw;
+
+        .jacquard {
+            display: block;
+            color: $grey;
+            font-size: 1em;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $black;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .suedebag {
+        position: absolute;
+        width: 30vw;
+        top: 40%;
+        left: 49%;
+        text-align: center;
+        transform: translateX(-50%);
+
+        .studded {
+            font-size: 1em;
+            color: $white;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $white;
+        }
+
+        .discover {
+            @include discover;
+        } 
+
+        a:link {
+            color: $white;
+        }
+      
+        a:visited {
+            color: $white;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .corduroy {
+        position: absolute;
+        width: 15vw;
+        top: 75%;
+        left: 77%;
+        text-align: right;
+
+        .special {
+            font-size: 1em;
+            color: $grey;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $black;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+}
+
+
+
+
+
+
+
+.top {
+    height: auto;
+    position: relative;
+    width: 100vw;
+    overflow-x: hidden;
+
+    .topseller {
+
+        .sectiontitle {
+            @include sectiontitle;
+            
+        }
+
+        .undertitle {
+            @include undertitle;
+        }
+    }
+
+    .leatherblouse {
+        position: relative;
+        height: 75vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .leatherbag {
+            display: none;
+        }
+
+        .flower {
+            margin-left: 21vw;
+            height: auto;
+            width: 70vw;
+        }
+    }
+
+    .leather {
+        display: none;
+    }
+
+    .flowerblouse {
+        position: absolute;
+        top: 29vh;
+        left: 7vw;
+        width: 10vw;
+
+        .blouse {
+            color: $black;
+            font-size: 2em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .glitterglasses {
+        position: relative;
+        height: 75vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        .mglasses {
+            display: none;
+        }
+
+        .gshoes {
+            width: 70vw;
+            height: auto;
+            margin-left: 21vw;
+        }
+    }
+
+    .glitter {
+        position: absolute;
+        top: 105vh;
+        left: 5vw;
+        width: 10vw;
+
+        .glittershoes {
+            color: $black;
+            font-size: 2em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .metallicglasses {
+        display: none;
+    }
+}
+
+
+
+
+
+
+.new {
+    height: auto;
+    width: 100vw;
+    overflow-x: hidden;
+    padding-top: 10vh;
+    padding-bottom: 2vh;
+    position: absolute;
+    top: 360vh;
+
+    .sectiontitle {
+        @include sectiontitle;
+    }
+        
+    .undermobile {
+        @include undertitle;
+        padding-bottom: 1vh;
+    }
+
+    .all {
+        display: none;
+    }
+
+    .allmobile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 13vw 0 4vw;
+        font-size: 1em;
+
+        a:link {
+            color: $grey;
+            text-decoration: none;
+        }
+            
+        a:visited {
+            color: $grey;
+            text-decoration: none;
+        }
+                
+        a:hover {
+            color: $orange;
+            text-decoration: underline;
+        }
+    }
+
+
+    .firstrow {
+        @include grid-rows;
+        margin: 5vh 10vw 0 6vw;
+
+        .hidden {
+            display: none;
+        }
+
+        .clothesgrid {
+            align-self: stretch;
+            display: block;
+    
+            /**images**/
+            .gridimage {
+                width: 40vw;
+                padding-bottom: 1vh;
+            }
+    
+            /**legends**/
+            .clothename {
+                @include clothesname;
+            }
+    
+            .stars {
+                font-size: 0.75em;
+    
+                .checked {
+                    color: $orange;
+                }
+            }
+    
+            .blackdot {
+                height: 1em;
+                width: 1em;
+                background-color: rgb(26, 28, 36);
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .reddot {
+                height: 1em;
+                width: 1em;
+                background-color: rgb(87, 18, 18);
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .price {
+                @include price;
+            }    
+        }
+    }
+
+    .secondrow {
+        @include grid-rows;
+        margin: 5vh 6vw 0 6vw;
+
+        .hidden {
+            display: none;
+        }
+
+        .clothesgrid {
+            align-self: stretch;
+    
+            /**images**/
+            .gridimage {
+                width: 40vw;
+                padding-bottom: 1vh;
+            }
+    
+            /**legends**/
+            .clothename {
+                @include clothesname;
+            }
+    
+            .stars {
+                font-size: 0.75em;
+    
+                .checked {
+                    color: $orange;
+                }
+            }
+
+            .price {
+                @include price;
+            } 
+        }
+    }
+
+
+    .thirdrow {
+        display: none;
+    }
+
+    .discoverrow {
+        width: 15vw;
+        @include discover;
+        margin-left: 43%;
+        padding-top: 3vh;
+    }
+
+    a:link {
+        color: $black;
+    }
+  
+    a:visited {
+        color: $black;
+    }
+    
+    a:hover {
+        color: $orange;
+    }
+}
+
+
+
+
+
+
+
+
+.hobodeal {
+    background-image: url(../resources/deals_image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 4vw;
+    padding-top: 3vh;
+    top: 540vh;
+    height: 45vh;
+    width: 100vw;
+    overflow-x: hidden;
+    line-height: 3vh;
+    position: absolute;
+
+    /**text**/
+    .dealoftheday {
+        font-size: 1em;
+        font-weight: 300;
+        color: $grey;
+    }
+
+    .hobobag {
+        font-size: 1.5em;
+        color: $black;
+        font-weight: bold;
+    }
+
+    .saleprice {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .slashedprice {
+        text-decoration: line-through;
+        font-size: 1em;
+        color: $grey;
+        padding-bottom: 1vh;
+    }
+
+    .newprice {
+        color: $black;
+        font-size: 1em;
+        padding-left: 1vw;
+        padding-bottom: 1vh;
+    }
+
+    .save {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh 0 4vh;
+        background-color: $orange;
+        border-radius: 3px;
+        width: 9vw;
+        height: 3vh;
+        color: $white;
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+ 
+    .instock {
+        display: none;
+    }
+
+    /**countdown**/
+    .nbrs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 5vh;
+        margin-top: 1vh;
+        font-size: 1.5em;
+        font-weight: bold;
+          
+        @import "_countdown-numbers";
+    }
+
+    .countdown {
+        height: 4vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: $grey;
+
+        @import "countdown-values";
+    }
+
+    .shopnow {
+        @include shopnow;
+        padding-top: 3vh;
+    }
+
+    a:link {
+        color: $black;
+    }
+  
+    a:visited {
+        color: $black;
+    }
+    
+    a:hover {
+        color: $orange;
+    }
+
+}
+
+
+
+
+
+
+
+
+/***NEWS**/
+.latestnews {
+    position: absolute;
+    width: 100vw;
+    overflow-x: hidden;
+    margin-top: 3vh;
+    height: auto;
+    top: 580vh;
+
+
+    .sectiontitle {
+        @include sectiontitle;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline-end: 2vw;
+        font-size: 1em;  
+        padding-bottom: 2vh;  
+
+
+        .undertitle {
+            @include undertitle;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .news-row {
+        margin: 2vh 12%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .redcarpet {
+            width: 90vw;
+            height: auto;
+        }
+
+        .clothename {
+            @include clothesname;
+            width: 90vw;
+            padding-bottom: 2vh;
+        }
+
+        .legend {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 4vh;
+        }
+
+        .author {
+            font-size: 0.75em;
+            color: $orange;
+            padding-right: 1vw;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        img {
+            width: 75vw;
+            height: 55vh;
+            object-fit: cover;
+            align-self: center;
+            padding-bottom: 1vh;
+        }
+
+        
+        .bellahadid, .berlin {
+            width: 250px;
+            align-self: stretch;
+
+            img {
+                width: 32vw;
+                height: 27vh;
+                object-fit: cover;
+            }
+
+            .clothename {
+                @include clothesname;
+                width: 30vw;
+                padding-bottom: 2vh;
+            }
+        }
+
+        .legend {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-bottom: 4vh;
+        }
+
+        .author {
+            font-size: 0.75em;
+            color: $orange;
+            padding-right: 1vw;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .date {
+            color: $grey;
+            font-size: 0.75em;
+        }
+
+        .readmore {
+            @include readmore;
+            padding-bottom: 2vh;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+/**keep in touch**/
+.newsletter {
+    display: flex;
+    width: 100vw;
+    overflow-x: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 22vh;
+
+    .sectiontitle {
+        @include sectiontitle;
+    }
+
+    .undertitle {
+        @include undertitle;
+    }
+  
+    .signup {
+        position: absolute;
+        align-self: stretch;
+        width: 35%;
+        height: 4vh;
+        margin-right: 10%;
+        border-bottom: solid 1px $grey;
+        left: 60%;
+
+        .mail {
+            position: absolute;
+            top: 1vh;
+            left: 1vw;
+            z-index: 2;
+        }
+
+        input {
+            position: absolute;
+            left: 15%;
+            width: 10vw;
+            height: 3vh;
+            bottom: 2vh;
+            z-index: 2;
+            width: 16vw;
+            border: none;
+        }
+
+        .subscribe {
+            position: absolute;
+            top: 1vh;
+            left: 67%;
+            z-index: 2;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+.footbanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+    position: absolute;
+    overflow-x: hidden;
+    top: 760vh;
+    height: 50vh;
+    width: 100vw;
+    overflow-x: hidden;
+    padding-bottom: 55vh;
+
+     .footimg {
+        height: 50vh;
+        object-fit: contain;
+    }
+
+    .bloc {
+        display: none;
+    }
+}
+
+footer {
+    position: absolute;
+    top: 850vh;
+}
+
+
+
+

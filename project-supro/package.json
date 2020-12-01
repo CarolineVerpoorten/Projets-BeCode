@@ -1,0 +1,25 @@
+{
+  "name": "project-supro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
+    "scss": "node-sass --watch header/scss -o header/css",
+    "scss": "node-sass --watch footer/scss -o footer/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolineVerpoorten/project-supro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolineVerpoorten/project-supro/issues"
+  },
+  "homepage": "https://github.com/CarolineVerpoorten/project-supro#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

@@ -1,0 +1,126 @@
+/* général */
+body {
+    background-color: #CDB5FF;
+    background-image: url(https://images.unsplash.com/photo-1445510491599-c391e8046a68?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 25%;
+    margin-right: 10%;
+    margin-top: 3%;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 150%;
+    color: #3A3B54;
+}
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 0;
+}
+h1 {
+    font-weight: bold;
+}
+h2 {
+    font-weight: bold;
+}
+
+/* logo links */
+.logogithub {
+    max-width: 40px;
+    height: auto;
+    opacity: 0.7;
+    padding-right: 10px;
+}
+.logolinkedin {
+    max-width: 40px;
+    height: auto;
+    opacity: 0.7;
+    padding-left: 10px;
+}
+
+
+/* links */
+a:link {
+    color: #4F3B54;
+  }
+  a:visited {
+    color: #48597A;
+  }
+  a:hover {
+    color: #996374;
+  }
+  a:active {
+    color: #615199;
+  }
+
+
+/* grid */
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    grid-gap: 10px;
+    grid-auto-rows: auto;
+}
+.name {
+    grid-column: 1/span 2;
+    grid-row: 1/2;
+    background-color: #E8DAD1;
+    text-align: center;
+    border: 2px none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #6E628A;
+}
+.competences {
+    grid-column: 1;
+    grid-row: 3/span 2;
+    background-color: #E8DAD1;
+    padding: 15px;
+    padding-right: 20px;
+    text-align: justify;
+    border: 2px none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #6E628A;
+}
+.langues {
+    grid-column: 1;
+    grid-row: 5/span 2;
+    background-color: #E8DAD1;
+    padding: 15px;
+    padding-right: 20px;
+    text-align: justify;
+    border: 2px none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #6E628A;
+}
+.contact {
+    grid-column: 1;
+    grid-row: 7/span 2;
+    background-color: #E8DAD1;
+    padding: 15px;
+    padding-right: 20px;
+    text-align: justify;
+    border: 2px none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #6E628A;
+}
+.experience {
+    grid-column: 2;
+    grid-row: 3/span 3;
+    background-color: #E8DAD1;
+    padding: 15px;
+    padding-right: 20px;
+    text-align: justify;
+    border: 2px none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #6E628A;
+}
+.formation {
+    grid-column: 2;
+    grid-row: 6/span 3;
+    background-color: #E8DAD1;
+    padding: 15px;
+    padding-right: 20px;
+    text-align: justify;
+    border: 2px none;
+    border-radius: 5px;
+    box-shadow: 5px 10px 18px #6E628A;
+}

@@ -1,0 +1,973 @@
+
+@import "_mixins";
+@import "_valeurs";
+@import "_header";
+@import "_footer";
+
+html {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+/**header**/
+header {
+    height: 90vh;
+    text-decoration: none;
+    color: $black;
+    background-image: url(../resources/abc.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .hamburger {
+        display: none;
+    }
+
+
+    /**social media logos**/
+    .socialmedia {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 49vh;
+        left: 3%;
+        transform: translateY(-30%);
+        justify-content: center;
+        align-items: center;
+        width: 2vw;
+        height: 3vh;
+
+        .fab {
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            height: 100%;
+            width: auto;
+            align-self: stretch;
+        }
+
+        a:link {
+            color: $grey;
+        }
+      
+        a:visited {
+            color: $grey;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    /**banner sneakers**/
+    .womanshoes {
+        position: absolute;
+        width: 20vw;
+        top: 25vh;
+        left: 65%;
+
+        .preview {
+            color: $orange;
+            font-size: 1em;
+        }
+
+        .woman {
+            font-size: 5em;
+            font-weight: bold;
+            color: $black;
+            margin: 1vh 0 5vh 0;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+
+    }
+
+    .dots {
+        display: hidden;
+    }
+}
+
+
+
+
+
+/**banner under header**/
+.bannerh1 {
+    position: relative;
+
+    /**images**/
+    .imagebanner {
+        display: flex;
+        z-index: -1;
+        height: 100%;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+
+        .banner {
+            width: (100/3)*1%;
+            height: 100%;
+        }
+    }
+
+    /**texte 1**/
+    .headband {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 20%;
+        left: 3%;
+        width: 15vw;
+
+        .jacquard {
+            display: none;
+            color: $black;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $black;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    /**texte 2**/
+    .suedebag {
+        display: block;
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        right: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .studded {
+            font-size: 1em;
+            color: $white;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $white;
+        }
+
+        .discover {
+            @include discover;
+        } 
+
+        a:link {
+            color: $white;
+        }
+      
+        a:visited {
+            color: $white;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    /**texte 3**/
+    .corduroy {
+        position: absolute;
+        width: 10vw;
+        top: 20%;
+        left: 85%;
+
+        .special {
+            font-size: 1em;
+            color: $grey;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $black;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+}
+
+
+
+
+
+
+/**top seller**/
+.top {
+    position: relative;
+    height: 155vh;
+
+    /**titre de section**/
+    .topseller {
+
+        .sectiontitle {
+            @include sectiontitle;
+        }
+
+        .undertitle {
+            @include undertitle;
+        }
+    }
+
+    /**images partie 1**/
+    .leatherblouse {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 5vh 20vw;
+        width: 60vw;
+        height: 50vh;
+
+        .leatherbag {
+        width: 15vw;
+        height: auto;
+        margin-bottom: 17vh;
+        z-index: -1;
+        }
+
+        .flower {
+            width: 30vw;
+            height: auto;
+            z-index: -1;
+        }
+    }
+
+    /**texte partie 1**/
+    .leather {
+        position: absolute;
+        top: 63vh;
+        left: 20vw;
+        width: 15vw;
+        z-index: 1;
+
+        .shopbag {
+            color: $black;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .flowerblouse {
+        position: absolute;
+        top: 32vh;
+        left: 45vw;
+        width: 10vw;
+        z-index: 1;
+
+        .blouse {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+            padding-bottom: 2vh;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+
+    }
+
+
+    /**images partie 2**/
+    .glitterglasses {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 20vh 20vw 0;
+        width: 60vw;
+        height: 50vh;
+
+        .gshoes {
+            width: 30vw;
+            height: auto;
+            margin-left: 5vw;
+            z-index: -1;
+        }
+
+        .mglasses {
+            width: 15vw;
+            height: auto;
+            margin-left: 2vw;
+            z-index: -1;
+        }
+    }
+
+    /**texte partie 2**/
+    .glitter {
+        position: absolute;
+        top: 110vh;
+        left: 20vw;
+        width: 15vw;
+        z-index: 1;
+
+        .glittershoes {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+    
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .metallicglasses {
+        position: absolute;
+        top: 149vh;
+        left: 66vw;
+        width: 15vw;
+        z-index: 1;
+
+        .frames {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }  
+}
+
+
+
+
+
+
+/**new arrivals**/
+.new {
+    padding-top: 15vh;
+    padding-bottom: 6vh;
+  
+    /**section title**/
+    .newarrivals {
+        font-size: 1.5em;
+        margin-block-start: 0.7vw;
+        margin-block-end: 0.7vw;
+
+        .sectiontitle {
+            @include sectiontitle;
+        }
+
+        .undertitle {
+            @include undertitle;
+            padding-right: 16vw;
+        }
+
+        .undermobile {
+            display: none;
+        }
+
+        .all {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-inline-end: 20vw;
+            font-size: 0.6em;
+            font-weight: bold;
+        }
+
+        a:link {
+            color:$grey;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: $grey;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color:$orange;
+            text-decoration: underline;
+        }
+
+        .allmobile {
+            display: none;
+        }
+    }
+}
+
+/**first row**/
+.firstrow {
+    @include grid-rows;
+
+    .clothesgrid {
+        align-self: stretch;
+    }
+
+    /**images**/
+    .gridimage {
+        width: 15vw;
+    }
+
+    /**legends**/
+    .clothename {
+        @include clothesname;
+        align-self: stretch;
+    }
+
+    .stars {
+        font-size: 0.8em;
+        align-self: stretch;
+
+        .checked {
+            color: $orange;
+        }
+    }
+
+    /**prices**/
+    .saleprice {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 1vh;
+
+        .slashedprice {
+            text-decoration: line-through;
+            font-size: 1em;
+            color: $grey;
+            padding-right: 1vw;
+            align-self: stretch;
+        }
+
+        .newprice {
+            color: $black;
+            font-size: 1em;
+            align-self: stretch;
+        }
+    }
+
+    .price {
+        @include price;
+    }  
+        
+    .blackdot {
+        height: 1em;
+        width: 1em;
+        background-color: rgb(26, 28, 36);
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .reddot {
+        height: 1em;
+        width: 1em;
+        background-color: rgb(87, 18, 18);
+        border-radius: 50%;
+        display: inline-block;
+    }
+ 
+} 
+
+/**second rown**/
+.secondrow {
+    @include grid-rows;
+
+    .hidden {
+        display: block;
+    }
+
+    .clothesgrid {
+        align-self: stretch;
+
+        /**images**/
+        .gridimage {
+            width: 15vw;
+        }
+
+        /**legends**/
+        .clothename {
+            @include clothesname;
+        }
+    }
+
+    .price {
+        @include price;
+    } 
+
+    .dot {
+        height: 1.5em;
+        width: 1.5em;
+        background-color: rgb(209, 209, 209);
+        border-radius: 50%;
+        display: inline-block;
+        font-size: 0.75em;
+        text-align: center;
+    }
+
+}
+
+.thirdrow {
+    display: none;
+}
+
+.discoverrow {
+    width: 5vw;
+    margin: 5vh auto;
+    font-size: 1em;
+    @include discover;
+
+    a:link {
+        color: $black;
+    }
+  
+    a:visited {
+        color: $black;
+    }
+    
+    a:hover {
+        color: $orange;
+    }
+}
+
+
+
+
+
+
+
+
+/**deal banner**/
+.hobodeal {
+    background-image: url(../resources/deals_image.jpg);
+    background-size: cover;
+    padding-left: 20vw;
+    padding-top: 13vh;
+    height: 65vh;
+    width: 100%;
+
+    /**text**/
+    .dealoftheday {
+        font-size: 1em;
+        font-weight: 300;
+        color: $grey;
+    }
+
+    .hobobag {
+        font-size: 2em;
+        color: $black;
+        font-weight: bold;
+        padding: 1vh 0 2vh 0;
+    }
+
+    .saleprice {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .slashedprice {
+        text-decoration: line-through;
+        font-size: 1.2em;
+        color: $grey;
+        padding-bottom: 1vh;
+    }
+
+    .newprice {
+        color: $black;
+        font-size: 1.2em;
+        padding-left: 1vw;
+        padding-bottom: 1vh;
+    }
+
+    .save {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh 0 4vh;
+        background-color: $orange;
+        border-radius: 3px;
+        width: 4vw;
+        height: 2vh;
+        color: $white;
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+ 
+    .instock {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vh 0 4vh;
+        background-color: green;
+        border-radius: 3px;
+        width: 4vw;
+        height: 2vh;
+        color: $white;
+        font-size: 0.75em;
+        font-weight: bold;
+    }
+
+    /**countdown**/
+    .nbrs {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 5vh;
+        margin-top: 1vh;
+        font-size: 2em;
+        font-weight: bold;
+          
+        @import "_countdown-numbers";
+    }
+
+    .countdown {
+        height: 5vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: $grey;
+
+        @import "countdown-values";
+    }
+
+    .shopnow {
+        @include shopnow;
+        padding-top: 3vh;
+    }
+
+    a:link {
+        color: $black;
+    }
+  
+    a:visited {
+        color: $black;
+    }
+    
+    a:hover {
+        color: $orange;
+    }
+
+}
+
+
+
+
+
+
+/***NEWS**/
+.latestnews {
+    position: relative;
+    margin-top: 5vh;
+    height: 95vh;
+
+    .sectiontitle {
+        @include sectiontitle;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline-end: 20vw;
+        font-size: 1em;    
+
+
+        .undertitle {
+            @include undertitle;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .news-row {
+        margin: 5vh 20vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .redcarpet, .bellahadid, .berlin {
+            width:18vw;
+            align-self: stretch;
+        }
+
+        img {
+            width: 18vw;
+            height: 27vh;
+            object-fit: cover;
+        }
+
+        .clothename {
+            @include clothesname;
+            width: 18vw;
+        }
+
+        .legend {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .author {
+            font-size: 0.75em;
+            color: $orange;
+            padding-right: 1vw;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .date {
+            color: $grey;
+            font-size: 0.75em;
+        }
+    }
+
+    .sectiontitle {
+        @include sectiontitle;
+    }
+
+    .readmore {
+        display: none;
+    }
+}
+
+
+
+
+
+/**keep in touch**/
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 5vh;
+
+    .undertitle {
+        @include undertitle;
+    }
+  
+    .signup {
+        position: absolute;
+        align-self: stretch;
+        width: 30vw;
+        height: 4vh;
+        margin-right: 29vw;
+        border-bottom: solid 1px $grey;
+        left: 50vw;
+
+        .mail {
+            position: absolute;
+            top: 1vh;
+            right: 0;
+            bottom: 0;
+            left: 1vw;
+            z-index: 2;
+        }
+
+        input {
+            position: absolute;
+            top: 0.5vh;
+            left: 2vw;
+            z-index: 2;
+            width: 35vw;
+            height: 3vh;
+            border: none;
+        }
+
+        .subscribe {
+            position: absolute;
+            top: 1vh;
+            left: 25vw;
+            z-index: 2;
+        }
+
+        a:link {
+            color: $black;
+            text-decoration: none;
+        }
+      
+        a:visited {
+            color: $black;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+}
+
+.footbanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vh;
+    position: absolute;
+    top: 570vh;
+    height: 230vh;
+    width: 100vw;
+    padding-bottom: 55vh;
+
+     .footimg {
+        height: 30vh;
+    }
+
+    .bloc {
+        background-color: $orange;
+        border: none;
+        color: $white;
+        padding: 2vh 1vw;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        position: absolute;
+        font-weight: bold;
+
+        .follow {
+            font-size: 0.75em;
+        }
+
+        .hashtag {
+            font-size: 2em;
+            padding-top: 1vh;
+        }
+    }
+}
+
+footer {
+    position: absolute;
+    top: 690vh;
+}
+

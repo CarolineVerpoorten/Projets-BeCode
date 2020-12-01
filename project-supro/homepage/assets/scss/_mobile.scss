@@ -1,0 +1,1016 @@
+@import "_valeurs";
+@import "_mixins-mobile";
+@import "_menu-mobile";
+@import "_footer-mobile";
+
+
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0 7% 0 7%;
+}
+
+header {
+    width: 100vw;
+    overflow-x: hidden;
+    height: auto;
+
+    .navigateur {
+        display:none
+    }
+
+    .background {
+        height: 77vh;
+        width: 85vw;
+        position: relative;
+        background-image: url(../resources/abc.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+    }
+
+    .socialmedia {
+        position: absolute;
+        top: 70vh;
+        left: 43%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fab {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 40px;
+            height: 30px;
+        }
+
+        a:link {
+            color: $grey;
+            text-decoration: none;
+        }
+      
+        a:visited {
+            color: $grey;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: $orange;
+            text-decoration: none;
+        }
+    }
+
+    .womanshoes {
+        position: absolute;
+        top: 25vh;
+        left: 10%;
+        width: 25vw;
+
+        .preview {
+            color: $orange;
+            font-size: 1em;
+        }
+
+        .woman {
+            font-size: 3em;
+            font-weight: bold;
+            color: $black;
+            margin: 9px 0 45px 0;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .dots {
+        position: absolute;
+        top: 76vh;
+        left: 43%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .dot {
+            height: 0.75em;
+            width: 0.75em;
+            border-radius: 50%;
+            border: solid 1px $grey;
+        }
+
+        .dot-black {
+            height: 0.75em;
+            width: 0.75em;
+            border-radius: 50%;
+            background-color: $black;
+        }
+    }
+}
+
+.bannerh1 {
+    height: auto;
+    width: 100vw;
+    position: relative;
+
+    .imagebanner {
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        flex-direction: column;
+
+        .banner {
+            width: 85vw;
+            height: auto;
+            object-fit: cover;  
+        }
+    }
+
+    .headband {
+        position: absolute;
+        top: 6%;
+        left: 5%;
+        width: 50vw;
+
+        .jacquard {
+            color: $grey;
+            font-size: 1em;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $black;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .suedebag {
+        position: absolute;
+        width: 60vw;
+        top: 40%;
+        left: 42%;
+        text-align: center;
+        transform: translateX(-50%);
+
+        .studded {
+            font-size: 1em;
+            color: $white;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $white;
+        }
+
+        .discover {
+            @include discover;
+        } 
+
+        a:link {
+            color: $white;
+        }
+      
+        a:visited {
+            color: $white;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .corduroy {
+        position: absolute;
+        width: 60vw;
+        top:75%;
+        left: 18%;
+        text-align: right;
+
+        .special {
+            font-size: 1em;
+            color: $grey;
+        }
+
+        .bannertitle {
+            @include bannertitle;
+            color: $black;
+        }
+
+        .discover {
+            @include discover;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+}
+
+.top {
+    height: auto;
+    position: relative;
+
+    .topseller {
+
+        .sectiontitle {
+            @include sectiontitle;
+            
+        }
+
+        .undertitle {
+            @include undertitle;
+        }
+    }
+
+    .leatherblouse {
+        position: relative;
+        height: auto;
+
+        .leatherbag {
+            display: block;
+            padding-top: 5vh;
+            width: 65vw;
+            height: auto;
+            margin-left: 4vw;
+        }
+
+        .flower {
+            padding-top: 30vh;
+            width: 80vw;
+            height: auto;
+            margin-left: 2vw;
+        }
+    }
+
+    .leather {
+        display: block;
+        position: absolute;
+        top: 67vh;
+        left: 4vw;
+        width: 27vw;
+
+        .shopbag {
+            color: $black;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .flowerblouse {
+        position: absolute;
+        top: 146vh;
+        left: 4vw;
+        width: 60vw;
+
+        .blouse {
+            color: $black;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .glitterglasses {
+        position: relative;
+        height: auto;
+
+        .mglasses {
+            display: block;
+            position: absolute;
+            top: 100vh;
+            width: 65vw;
+            height: auto;
+            margin-left: 4vw;
+        }
+    }
+
+    .gshoes {
+        width: 80vw;
+        height: auto;
+        margin-left: 3vw;
+        margin-top: 24vh;
+    }
+
+    .glitter {
+        position: absolute;
+        top: 222vh;
+        left: 4vw;
+        width: 60vw;
+
+        .glittershoes {
+            color: $black;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .metallicglasses {
+        display: block;
+        position: absolute;
+        top: 287vh; 
+        left: 4vw;
+        width: 35vw;
+
+        .frames {
+            color: $black;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: $black;
+        }
+
+        .price {
+            @include price;
+        }
+
+        .shopnow {
+            @include shopnow;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+}
+
+
+.new {
+    height: auto;
+    position: relative;
+    top: 90vh;
+    padding-bottom: 2vh;
+
+    .newarrivals {
+
+        .sectiontitle {
+            @include sectiontitle;
+            
+        }
+
+        .undertitle {
+            display: none;
+        }
+
+        .undermobile {
+            @include undertitle;
+            padding-bottom: 1vh;
+        }
+
+        .all {
+            display: none;
+        }
+
+        .allmobile {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-inline-end: 30%;
+            padding-top: 5px;
+            padding-left: 1vw;
+            font-size: 1em;
+            color: $grey;
+        }
+
+        a:link {
+            color: $grey;
+            text-decoration: none;
+        }
+      
+        a:visited {
+            color: $grey;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: $orange;
+            text-decoration: underline;
+        }
+    }
+
+    .firstrow {
+        @include grid-rows;
+        margin-top: 6vh;
+        left: 4vw;
+
+        .hidden {
+            display: none;
+        }
+
+        .clothesgrid {
+            align-self: stretch;
+    
+            /**images**/
+            .gridimage {
+                width: 37vw;
+                padding: 0 1vw 0 1vw;
+            }
+    
+            /**legends**/
+            .clothename {
+                @include clothesname;
+                width: 35vw;
+            }
+    
+            .stars {
+                font-size: 0.75em;
+                padding-bottom: 1vh;
+    
+                .checked {
+                    color: $orange;
+                }
+            }
+
+            .blackdot {
+                height: 1.2em;
+                width: 1.2em;
+                background-color: rgb(26, 28, 36);
+                border-radius: 50%;
+                display: inline-block;
+            }
+    
+            .reddot {
+                height: 1.2em;
+                width: 1.2em;
+                background-color: rgb(87, 18, 18);
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .price {
+                @include price;
+                padding-bottom: 1vh;
+            }    
+        }
+    }
+
+    .secondrow {
+        @include grid-rows;
+        margin-top: 6vh;
+        left: 4vw;
+
+        .hidden {
+            display: none;
+        }
+
+        .clothesgrid {
+            align-self: stretch;
+    
+            /**images**/
+            .gridimage {
+                width: 37vw;
+                padding: 0 1vw 0 1vw;
+            }
+    
+            /**legends**/
+            .clothename {
+                @include clothesname;
+                width: 30vw;
+            }
+    
+            .stars {
+                font-size: O.75em;
+    
+                .checked {
+                    color: $orange;
+                }
+            }
+
+            .price {
+                @include price;
+            }    
+        }
+    }
+
+    .thirdrow {
+        display: block;
+        @include grid-rows;
+        margin-top: 6vh;
+        left: 4vw;
+
+        .clothesgrid {
+            align-self: stretch;
+    
+            /**images**/
+            .gridimage {
+                width: 37vw;
+                padding: 0 1vw 0 1vw;
+            }
+    
+            /**legends**/
+            .clothename {
+                @include clothesname;
+            }
+        
+            .stars {
+                font-size: 0.75em;
+        
+                .checked {
+                    color: $orange;
+                }
+            }
+        
+            .dot {
+                height: 1.2em;
+                width: 1.2em;
+                background-color: rgb(209, 209, 209);
+                border-radius: 50%;
+                display: inline-block;
+                font-size: 0.75em;
+            }
+
+            .price {
+                @include price;
+            }  
+
+        }
+    }
+
+    .discover {
+        @include discover;
+        margin-left: 38%;
+        padding-top: 5vh;
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+.hobodeal {
+    top: 93vh;
+    position: relative;
+    background-image: none;
+    height: auto;
+    width: auto;
+    margin: 0 2vw 0 2vw;
+
+    .bannerbackground {
+        background-image: url(../resources/deals_image.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 75vh;
+        width: 75vw;
+        position: relative;
+        padding-left: 4vw;
+
+
+        /**text**/
+        .dealoftheday {
+            padding-top: 10vh;
+            padding-bottom: 2vh;
+            font-size: 16px;
+            font-weight: 300;
+            color: $grey;
+        }
+
+        .hobobag {
+            font-size: 32px;
+            color: $black;
+            font-weight: bold;
+            padding-bottom: 2vh;
+        }
+
+        .saleprice {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .slashedprice {
+            text-decoration: line-through;
+            font-size: 18px;
+            color: $grey;
+            padding-bottom: 10px;
+        }
+
+        .newprice {
+            color: $black;
+            font-size: 18px;
+            padding-left: 17px;
+            padding-bottom: 10px;
+        }
+
+        .save {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1vh 0 2vw;
+            background-color: $orange;
+            border-radius: 3px;
+            width: 18vw;
+            height: 3vh;
+            color: $white;
+            font-size: 1em;
+            font-weight: bold;
+        }
+    
+        .instock {
+            display: none;
+        }
+
+        /**countdown**/
+        .nbrs {
+            padding-top: 9vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 25px;
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+            
+            @import "_countdown-numbers";
+        }
+
+        .countdown {
+            height: 40px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: $grey;
+
+            @import "countdown-values";
+        }
+
+        .shopnow {
+            @include shopnow;
+            padding-top: 6vh;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+}
+
+
+
+
+/***NEWS**/
+.latestnews {
+    top: 93vh;
+    position: relative;
+    height: auto;
+
+
+    .sectiontitle {
+        @include sectiontitle;
+    }
+
+    .news {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-inline-end: 2vw;
+        font-size: 1em;  
+        padding-bottom: 2vh;  
+
+
+        .undertitle {
+            @include undertitle;
+            padding-bottom: 1vh;
+        }
+
+        .discover {
+            @include discover;
+            padding-left: 1vw;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+
+    .news-row {
+        margin-left: 5vw;
+
+        img {
+            width: 70vw;
+            height: 30vh;
+            object-fit: cover;
+            position: relative;
+            right: 1vw;
+        }
+
+        .redcarpet {
+            height: auto;
+        }
+
+        .clothename {
+            @include clothesname;
+            width: 70vw;
+        }
+
+
+        .bellahadid {
+            height: auto;
+
+            img {
+                width: 70vw;
+                height: 30vh;
+                object-fit: cover;
+                position: relative;
+                right: 1vw;
+            }
+
+            .clothename {
+                @include clothesname;
+                width: 70vw;
+            }
+        }
+
+        .berlin {
+            width: 100vw;
+            height: auto;
+
+            img {
+                width: 70vw;
+                height: 30vh;
+                object-fit: cover;
+                position: relative;
+                right: 1vw;
+            }
+
+            .clothename {
+                @include clothesname;
+                width: 70vw;
+            }
+        }
+
+        .legend {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .author {
+            font-size: 13px;
+            color: $orange;
+            padding-right: 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .date {
+            color: $grey;
+            font-size: 13px;
+        }
+
+        .readmore {
+            @include readmore;
+            padding-bottom: 20px;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+    }
+}
+
+/**keep in touch**/
+.newsletter {
+    position: relative;
+    padding-bottom: 2vh;
+
+    .sectiontitle {
+        @include sectiontitle;
+    }
+
+    .undertitle {
+        @include undertitle;
+        padding-bottom: 1vh;
+    }
+  
+    .signup {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        top: 7vh;
+        width: 90%;
+        height: 3vh;
+        margin-left: 3vw;
+        border-bottom: solid 1px $grey;
+
+        .mail {
+            top: 1px;
+            z-index: 2;
+            justify-self: left;
+            color: $black;
+        }
+
+        input {
+            justify-self: center;
+            height: 2vh;
+            z-index: 2;
+            width: 50vw;
+            border: none;
+        }
+
+        .subscribe {
+            justify-self: right;
+            top: 1px;
+            z-index: 2;
+            left: 60vw;
+        }
+
+        a:link {
+            color: $black;
+        }
+      
+        a:visited {
+            color: $black;
+        }
+        
+        a:hover {
+            color: $orange;
+        }
+
+    }
+}
+
+.footbanner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+    position: relative;
+    overflow-x: hidden;
+    top: 76vh;
+    height: 50vh;
+    width: 85vw;
+    padding-bottom: 20vh;
+
+    .footimg {
+        height: 25vh;
+        object-fit: contain;
+    }
+
+    .bloc {
+        display: none;
+    }
+}
+
+footer {
+    position: absolute;
+    top: 1030vh;
+}
+
+
+
+

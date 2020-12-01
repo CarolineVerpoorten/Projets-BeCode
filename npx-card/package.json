@@ -1,0 +1,25 @@
+{
+  "name": "@carolineverpoorten/card",
+  "version": "1.0.0",
+  "description": "Personal card of Caroline Verpoorten",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarolineVerpoorten/npx-card.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CarolineVerpoorten/npx-card/issues"
+  },
+  "homepage": "https://github.com/CarolineVerpoorten/npx-card#readme",
+  "dependencies": {
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "chalk-rainbow": "^1.0.0",
+    "figlet": "^1.5.0"
+  }
+}

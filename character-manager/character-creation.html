@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="css/character-creation.css"/>
+
+		<!-- Let browser know website is optimized for mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- Import Google Icon Font -->
+		<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+		<title>Character creation</title>
+	</head>
+
+	<body>
+
+		<main>
+
+			<h1 id="title">
+				Create a new character
+			</h1>
+			
+			<div class="character-creation">
+
+				<label class="center" for="image">Image:
+					<input type="file" id="image" class="image" onchange="encodeImageFileAsURL(this)" accept="image/jpeg, image/jpg">
+				</label>
+				<p>(Only accepts .jpeg or .jpg images)</p>
+				<br><br>
+
+				<label for="name">Name:
+					<input type="text" id="name" class="name">
+				</label>
+				<br><br>
+
+				<label for="short-description">Short description:
+					<input type="text" id="short-description" class="short-description">
+				</h2>
+				<br><br>
+
+				<label for="description">Description:
+					<textarea type="text" id="description" class="description"></textarea>
+				</label>
+				<br><br>
+			
+
+				<button id="submit">
+					<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjxwYXRoIGQ9Ik05IDE2LjJsLTMuNS0zLjVjLS4zOS0uMzktMS4wMS0uMzktMS40IDAtLjM5LjM5LS4zOSAxLjAxIDAgMS40bDQuMTkgNC4xOWMuMzkuMzkgMS4wMi4zOSAxLjQxIDBMMjAuMyA3LjdjLjM5LS4zOS4zOS0xLjAxIDAtMS40LS4zOS0uMzktMS4wMS0uMzktMS40IDBMOSAxNi4yeiIvPjwvc3ZnPg==" alt="">
+				</button>
+			</div>
+
+			<div class="button__reload" id="go-back" title="Go back">
+				<img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0id2hpdGUiIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjE4cHgiPjxwYXRoIGQ9Ik0xMiA1VjIuMjFjMC0uNDUtLjU0LS42Ny0uODUtLjM1bC0zLjggMy43OWMtLjIuMi0uMi41MSAwIC43MWwzLjc5IDMuNzljLjMyLjMxLjg2LjA5Ljg2LS4zNlY3YzMuNzMgMCA2LjY4IDMuNDIgNS44NiA3LjI5LS40NyAyLjI3LTIuMzEgNC4xLTQuNTcgNC41Ny0zLjU3Ljc1LTYuNzUtMS43LTcuMjMtNS4wMS0uMDctLjQ4LS40OS0uODUtLjk4LS44NS0uNiAwLTEuMDguNTMtMSAxLjEzLjYyIDQuMzkgNC44IDcuNjQgOS41MyA2LjcyIDMuMTItLjYxIDUuNjMtMy4xMiA2LjI0LTYuMjRDMjAuODQgOS40OCAxNi45NCA1IDEyIDV6Ii8+PC9zdmc+" alt="Reload">
+			</div>
+
+		</main>
+
+		<!--JavaScript at end of body for optimized loading-->
+		<script type="text/javascript" src="js/create.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+	</body>
+</html>

@@ -1,0 +1,65 @@
+
+    @mixin discover {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        text-decoration: underline;
+    }    
+
+    @mixin bannertitle {
+        margin-block-start: 21px;
+        margin-block-end: 21px;
+        font-size: 50px;
+        font-weight: bold;
+        margin: 9px 0 45px 0;
+    }
+
+    @mixin shopnow {
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 13px;
+        text-transform: uppercase;
+    }
+
+    @mixin price {
+            margin-block-start: 21px;
+            margin-block-end: 21px;
+            font-size: 15px;
+            color: $grey;
+    }
+
+    @mixin sectiontitle {
+        margin-block-start: 14px;
+        margin-block-end: 14px;
+        padding: 137px 0 0 365px;
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    @mixin undertitle {
+        margin-block-start: 14px;
+        margin-block-end: 14px;
+        padding-left: 370px;
+        font-size: 16px;
+        font-weight: 300;
+        color: $grey;
+    }
+
+    @mixin clothesname {
+        font-weight: bold;
+        font-size: 17px;
+        padding: 20px 0;
+        color: $black;
+    }
+
+    @mixin grid-rows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1109px;
+        margin: 91px auto;
+    }
+
+    @mixin desktopdisplay {
+            display: none;
+    }

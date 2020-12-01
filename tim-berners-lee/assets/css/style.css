@@ -1,0 +1,114 @@
+body {
+  font-family: "Open Sans", "Montserrat", sans-serif;
+  background-color: rgba(227, 233, 233, 0.87);
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+header,
+.contact,
+main {
+  background-color: whitesmoke;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: justify;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+header .timpicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #747878;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto; }
+
+header h1 {
+  color: #B01200;
+  text-align: center; }
+
+header h2 {
+  text-align: center; }
+
+header .wiki {
+  margin-top: 2vh;
+  background-color: #B01200;
+  border: none;
+  border-radius: 12px;
+  width: 150px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 37%;
+  margin-left: 37%; }
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .contact .logo {
+    height: 40px;
+    width: auto;
+    opacity: 0.4;
+    margin: 20%; }
+    .contact .logo .logo1 {
+      order: 1; }
+    .contact .logo .logo2 {
+      order: 2; }
+    .contact .logo .logo3 {
+      order: 3; }
+    .contact .logo a:link {
+      color: #747878;
+      text-decoration: none; }
+    .contact .logo a:hover {
+      color: #B01200;
+      text-decoration: underline; }
+
+main h2 {
+  text-align: center;
+  padding-bottom: 4vh; }
+
+main .space {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 3vh; }
+  main .space img {
+    width: 8vw;
+    height: auto; }
+  main .space .text {
+    margin-left: 2vw;
+    text-align: justify; }
+
+main .holiday {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 3vh; }
+  main .holiday img {
+    width: 8vw;
+    height: auto; }
+  main .holiday .text {
+    margin-left: 2vw;
+    text-align: justify; }
+
+main .egg {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 3vh; }
+  main .egg img {
+    width: 8vw;
+    height: auto; }
+  main .egg .text {
+    margin-left: 2vw;
+    text-align: justify; }

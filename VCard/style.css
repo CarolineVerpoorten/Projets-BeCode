@@ -1,0 +1,50 @@
+body {
+  background-image: url("https://texturefabrik.files.wordpress.com/2018/02/texturefabrik_dust-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 150%;
+  color: #3A3B54;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 5px;
+  grid-auto-rows: auto;
+  align-items: center;
+  }
+  .image {
+      grid-column: 1;
+      grid-row: 1;
+      border: 2px none;
+      border-radius: 5px;
+  }
+  .card {
+    grid-column: 2;
+    grid-row: 1;
+    background: linear-gradient(-141deg, rgb(249, 252, 255), rgb(187, 187, 187));
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px none;
+    border-radius: 5px;
+    padding: 5px;
+  }
+
+  .clock {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

@@ -1,0 +1,94 @@
+
+  /* general*/
+  p {
+    text-align: justify;
+  }
+  
+
+/* small screen*/
+@media screen and (max-width: 300px) {
+    body {
+      background-color: rgb(235, 72, 72);
+      font-size: 15px;
+    }
+    .petit {
+        display: block;
+    }
+    .moyen {
+        display: none;
+    }
+    .grand {
+        display: none;
+    }
+  }
+
+
+  /* medium screen*/
+  @media screen and (min-width: 300px) {
+    body {
+      background-color: rgb(67, 170, 67);
+      font-size: 20px;
+    }
+    .petit {
+        display: none;
+    }
+    .moyen {
+        display: block;
+    }
+    .grand {
+        display: none;
+    }
+    .m1 {
+      display: inline-block;
+      width: 66%;
+      height: auto;
+      padding: 5px;
+      float: left;
+    }
+    .m2 {
+      display: inline-block;
+      width: 33%;
+      height: auto;
+      padding: 5px;
+      float: right;
+    }
+  }
+
+
+  /* big screen*/
+  @media screen and (min-width: 768px) {
+    body {
+      background-color: rgb(110, 110, 185);
+      font-size: 30px;
+    }
+    .petit {
+        display: none;
+    }
+    .moyen {
+        display: none;
+    }
+    .grand {
+      display: block;
+    }
+    .g1 {
+      display: inline-block;
+      width: 32%;
+      height: auto;
+      padding: 5px;
+      float: left;
+    }
+    .g2 {
+      display: inline-block;
+      width: 32%;
+      height: auto;
+      padding: 5px;
+      
+    }
+    .g3 {
+      display: inline-block;
+      width: 32%;
+      height: auto;
+      padding: 5px;
+      float: right;
+    }
+  }
